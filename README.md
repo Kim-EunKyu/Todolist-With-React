@@ -10,7 +10,7 @@ ReactJs를 이용하여 Todolist 앱을 만들었습니다.
 
 ### 실제 서비스 주소
 
-- https://kim-eunkyu.github.io/Todolist-With-React/
+- https://kim-eunkyu.github.io/todolist-with-react/
 
 ### 주요기능
 

@@ -3,23 +3,24 @@ import TodoInsert from "./components/TodoInsert";
 import TodoList from "./components/TodoList";
 import TodoTemplate from "./components/TodoTemplate";
 
-function createBulkTodos() {
-  //test sample
-  const array = [];
-  for (let i = 1; i <= 2500; i++) {
-    array.push({
-      id: i,
-      text: `할 일 ${i}`,
-      checked: false,
-    });
-  }
-  return array;
-}
+// 테스트 용도의 리스트 생성 함수
+// function createBulkTodos() {
+//   //test sample
+//   const array = [];
+//   for (let i = 1; i <= 2500; i++) {
+//     array.push({
+//       id: i,
+//       text: `할 일 ${i}`,
+//       checked: false,
+//     });
+//   }
+//   return array;
+// }
 
 const App = () => {
-  const [todos, setTodos] = useState(createBulkTodos);
+  const [todos, setTodos] = useState("");
 
-  const nextId = useRef(2501);
+  const nextId = useRef(1);
 
   const onInsert = useCallback((text) => {
     const todo = {
