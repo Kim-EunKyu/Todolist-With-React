@@ -18,7 +18,7 @@ import TodoTemplate from "./components/TodoTemplate";
 // }
 
 const App = () => {
-  const [todos, setTodos] = useState("");
+  const [todos, setTodos] = useState([]);
 
   const nextId = useRef(1);
 
